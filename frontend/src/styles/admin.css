@@ -1,0 +1,283 @@
+.admin-page {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.admin-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.admin-container h1 {
+  font-size: 28px;
+  margin-bottom: 28px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.filter-section {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 28px;
+}
+
+.filter-section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+}
+
+.filter-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-actions button {
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-actions button:active {
+  transform: translateY(1px);
+}
+
+.payments-table-section {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.payments-table-section h2 {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.payments-table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.payments-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.payments-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  color: #555;
+}
+
+.payments-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.badge {
+  display: inline-block;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-bank {
+  background-color: #2c3e50;
+}
+
+.badge-paytm {
+  background-color: #1e88e5;
+}
+
+.badge-upi {
+  background-color: #43a047;
+}
+
+.badge-paypal {
+  background-color: #003087;
+}
+
+.badge-usdt {
+  background-color: #7c3aed;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .filter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .admin-container {
+    padding: 20px;
+  }
+
+  .payments-table th,
+  .payments-table td {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 15px;
+  }
+
+  .admin-container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .filter-section {
+    padding: 18px;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .filter-actions {
+    flex-direction: column;
+  }
+
+  .filter-actions button {
+    width: 100%;
+  }
+
+  .payments-table-section {
+    padding: 18px;
+  }
+
+  .payments-table th,
+  .payments-table td {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 12px;
+  }
+
+  .admin-container h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .filter-section,
+  .payments-table-section {
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+
+  .filter-grid {
+    gap: 10px;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .filter-actions button {
+    padding: 9px 16px;
+    font-size: 12px;
+  }
+
+  .payments-table {
+    font-size: 10px;
+  }
+
+  .payments-table th,
+  .payments-table td {
+    padding: 6px 8px;
+  }
+}

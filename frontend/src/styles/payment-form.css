@@ -1,0 +1,123 @@
+.add-payment-page,
+.edit-payment-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.payment-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.payment-form-container h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.payment-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.payment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-form input,
+.payment-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.payment-form-container > .btn-secondary {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .payment-form-container {
+    margin: 20px auto;
+  }
+
+  .payment-form-container h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .payment-form {
+    padding: 20px;
+  }
+
+  .payment-form input,
+  .payment-form select {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .payment-form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-form-container {
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+
+  .payment-form-container h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .payment-form {
+    padding: 15px;
+  }
+
+  .payment-form input,
+  .payment-form select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .payment-form button {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
